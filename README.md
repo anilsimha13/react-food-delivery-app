@@ -22,7 +22,7 @@ React is a _Javascript Library_ developed by _Facebook_
 
 - Render using Javascript in html (_Traditional Approach_)
 
-```js
+```java
     <script>
         const heading = document.createElement("h1");
         heading.innerHTML = "Hello World!🌏";
@@ -33,7 +33,7 @@ React is a _Javascript Library_ developed by _Facebook_
 
 - Render using React in html (_Traditional Approach_)
 
-```js
+```java
   <script>
       const heading = React.createElement(
         "div",
