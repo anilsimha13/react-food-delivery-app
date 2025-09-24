@@ -11,6 +11,7 @@ React is a _Javascript Library_ developed by _Facebook_
 - Cross-Origin
   - _refers to an attempt by a web browser to access a resource (like an API or a file) from a different origin than the one the web page was served from_
 - React.createElement() is just an Javascript Object
+- If you want to create the html elements at same level(Sibilings), you can use it by having Square brackets as [below code](#render-using-react-in-html-traditional-approach)
 
 ### Setup React
 
