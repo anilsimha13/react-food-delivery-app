@@ -1,0 +1,29 @@
+{
+  "name": "react_core_food_delivery_app",
+  "version": "1.0.0",
+  "description": "Let's build food ordering app",
+  "homepage": "https://github.com/anilsimha13/react-food-delivery-app#readme",
+  "bugs": {
+    "url": "https://github.com/anilsimha13/react-food-delivery-app/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anilsimha13/react-food-delivery-app.git"
+  },
+  "license": "ISC",
+  "author": "Anil Simha",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "parcel": "^2.16.0"
+  },
+  "dependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "browserslist": [
+    "last 2 Chrome version"
+  ] 
+}

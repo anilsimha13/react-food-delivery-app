@@ -49,5 +49,59 @@ React is a _Javascript Library_ developed by _Facebook_
 - Props (_elements, keys, children,attribures_)
 ![Props Screenshot](Screenshots/1.png)
 
+## Day - 2
+
+### Things to remember
+- NPM, Node Package Manager ❌ 
+- Bundlers
+  - Parcel
+  - Vite
+  - Webpack
+- Parcel
+  - `npm install parcel`
+  - Dev Build
+  - Local Server
+  - HMR - Hot Module Replacement
+  - File Watching Algorithm
+  - Caching > Faster Builds
+  - Image Optimization
+  - Minification
+  - Bundling
+  - Compressing
+  - Code Splitting
+  - Differential bundlings
+  - Error Handling
+  - HTTPs
+- Two Dependencies
+  - Dev Dependencies
+    - Required during Development phase
+  - Normal Dependencies
+    - Required during Production phase
+- "parcel": "^2.16.0"
+  - ^ Carrot symbol is for Minor upgrade
+  - ~ Tilda symbol is for Major upgrade
+### Setup React
+1. `npm init`
+2. `npm install -D parcel`
+3. `npx parcel index.html`
+4. `npm install react`
+5. `npm install react-dom`
+
+### Code to remember
+```json
+//Package.json
+  "devDependencies": {
+    "parcel": "^2.16.0"
+  },
+  "dependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "browserslist": [
+    "last 2 Chrome version"
+  ] 
+
+```
+
 
 
