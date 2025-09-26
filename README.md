@@ -1,4 +1,5 @@
 # React Food Delivery App
+
 React is a _Javascript Library_ developed by _Facebook_
 
 ## Day - 1
@@ -38,7 +39,7 @@ React is a _Javascript Library_ developed by _Facebook_
       const heading = React.createElement(
         "div",
         { id: "parent", attribute: "value" },
-        [React.createElement('h1',{},"Hello World!🌏 🧠"), 
+        [React.createElement('h1',{},"Hello World!🌏 🧠"),
         React.createElement('h5',{},'Creating the sibiling elements using Square Brackets🥹[ ]')]
       );
       const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -46,13 +47,15 @@ React is a _Javascript Library_ developed by _Facebook_
 
   </script>
 ```
+
 - Props (_elements, keys, children,attribures_)
-![Props Screenshot](Screenshots/1.png)
+  ![Props Screenshot](Screenshots/1.png)
 
 ## Day - 2
 
 ### Things to remember
-- NPM, Node Package Manager ❌ 
+
+- NPM, Node Package Manager ❌
 - Bundlers
   - Parcel
   - Vite
@@ -80,14 +83,19 @@ React is a _Javascript Library_ developed by _Facebook_
 - "parcel": "^2.16.0"
   - ^ Carrot symbol is for Minor upgrade
   - ~ Tilda symbol is for Major upgrade
+- BrowserList in package.json
+
 ### Setup React
+
 1. `npm init`
 2. `npm install -D parcel`
 3. `npx parcel index.html`
 4. `npm install react`
 5. `npm install react-dom`
+6. run the build `npx parcel index.html`
 
 ### Code to remember
+
 ```json
 //Package.json
   "devDependencies": {
@@ -99,9 +107,55 @@ React is a _Javascript Library_ developed by _Facebook_
   },
   "browserslist": [
     "last 2 Chrome version"
-  ] 
-
+  ]
 ```
 
+## Day - 3
 
+### Things to remember
 
+- JSX
+  - JSX code translated to React.createElement and Parcel uses Babel and Parcel will ask Babel to translate our code to Javascript.
+- React Component
+  - Class based (_Traditional_)
+  - Functional (_New_)
+- Fuctional Component
+  - Its a normal javascript funtion which returns the JSX code
+  - **Functional Component should start with Capital letter**
+- Component Composition
+  - Component inside the component is called as Component Composition
+
+### Code to remember
+
+```javascript
+//package.json to run the build
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  }
+```
+
+- JSX Sample code
+
+```javascript
+//React Element
+const jsxHeading = <h1 id="heading">Hello World from JSX 🚀</h1>;
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(jsxHeading);
+```
+
+- Functional Component
+
+```javascript
+const Heading1 = () => {
+  return (
+    <div>
+      <Heading />
+      <h2 className="heading">I am also from Heading1 Functional Component</h2>
+    </div>
+  );
+};
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<Heading1 />);
+```

@@ -1,3 +1,9 @@
-#parent{
-color: blueviolet;
+.mainHeader {
+  color: orange;
+}
+.secondHeader {
+  color: rgb(117, 136, 175);
+}
+.subHeading {
+  color: green;
 }

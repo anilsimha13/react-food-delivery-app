@@ -1,10 +1,26 @@
-import React from "react";
 import ReactDOM from "react-dom/client";
-const heading = React.createElement(
-  "div",
-  { id: "parent", attribute: "value" },
-  [React.createElement('h1',{},"Hello World!🌏 🧠"), React.createElement('h5',{},'Creating the sibiling elements using Square Brackets🥹[ ]')]
-);
-console.log(heading)
+const Heading = () => {
+  return (
+    <div>
+      <h1 className="mainHeader">I am the Main Header</h1>
+    </div>
+  );
+};
+const SecondHeading = () => {
+  return (
+    <div>
+      <h2 className="secondHeader">I am from second Heading</h2>
+    </div>
+  );
+};
+const SubHeading = () => {
+  return (
+    <div>
+      <Heading />
+      <SecondHeading />
+      <h3 className="subHeading">I am the Third heading</h3>
+    </div>
+  );
+};
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(heading);
+root.render(<SubHeading />);
