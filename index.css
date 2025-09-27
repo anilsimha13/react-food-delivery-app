@@ -1,9 +1,40 @@
-.mainHeader {
-  color: orange;
+.nav-items > ul {
+  list-style-type: none;
+  display: flex;
+  list-style-type: none;
 }
-.secondHeader {
-  color: rgb(117, 136, 175);
+
+.nav-items {
+  padding: 0px 20px;
 }
-.subHeading {
-  color: green;
+.res-container {
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+}
+
+.nav-items > ul > li {
+  padding: 10px;
+  margin: 10px;
+}
+.res-card {
+  width: 200px;
+  padding: 5px;
+}
+.res-card:hover {
+  background-color: #f0f0f0;
+  border: 1px solid black;
+  cursor: pointer;
+}
+.search {
+  padding: 10px;
+}
+.res-img {
+  width: 100%;
+  height: 40%;
 }

@@ -159,3 +159,22 @@ const Heading1 = () => {
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<Heading1 />);
 ```
+
+## Day - 4
+
+### Things to remember
+
+- Start building the Food Delivery App
+- Props are just like function arguments and attributes in HTML
+- Config driven UI
+- Key is a special string attribute you need to include when creating lists of elements
+
+### Code to remember
+
+```javascript
+{
+  resList.map((restaurant) => (
+    <RestaurantCard key={restaurant.info.id} resData={restaurant} />
+  ));
+}
+```
