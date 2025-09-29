@@ -178,3 +178,46 @@ root.render(<Heading1 />);
   ));
 }
 ```
+
+## Day - 5
+
+### Things to remember
+
+- Two Types of export/imports
+  - Default
+  - Named
+- Hooks
+  - These are normal functions which can be used to add extra functionalities to functional components
+- useState
+  - To create and manage state variables
+- Render
+  - When a state variable is updated, the component in which that state variable is defined will re-render
+- State variables
+  - These are the variables which when updated will re-render the component
+- useEffect
+  - To run side effects in functional components
+  - By default it runs after every render of the component
+  - We can control it by passing a second argument to useEffect which is an array of dependencies
+  - If we pass an empty array, it will run only once after the initial render (componentDidMount)
+  - If we pass a state variable in the array, it will run only when that state variable changes (componentDidUpdate for that variable)
+- Event handlers
+- Reconciliation/Diffing Algorithm/React Fiber
+  - When a state variable is updated, React will compare the new JSX with the previous JSX and will update only the changed parts in the DOM
+  - This process is called Reconciliation
+
+### Code to remember
+
+- Default Export
+
+```javascript
+file1: export default RestaurantCard;
+file2: import Header from "./components/Header";
+```
+
+- Named Export
+  - When you want to export multiple components in same file
+
+```javascript
+export const Component
+import {Component} from 'path'
+```
