@@ -221,3 +221,16 @@ file2: import Header from "./components/Header";
 export const Component
 import {Component} from 'path'
 ```
+
+## Day - 6
+
+### Things to remember
+
+- useEffect
+- Fetch API
+- Filter
+- Search
+- Fetch
+- Shimmer
+
+### Code to remember
