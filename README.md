@@ -190,6 +190,7 @@ root.render(<Heading1 />);
   - These are normal functions which can be used to add extra functionalities to functional components
 - useState
   - To create and manage state variables
+  - Never use useState in if-else conditions/Loops/Functions
 - Render
   - When a state variable is updated, the component in which that state variable is defined will re-render
 - State variables
@@ -233,4 +234,14 @@ import {Component} from 'path'
 - Fetch
 - Shimmer
 
-### Code to remember
+## Day - 7
+
+### Things to remember
+
+- react-router-dom
+  - `{ createBrowserRouter, RouterProvider ,useRouteError,Outlet, useParams}`
+- Children route
+- Link
+- Routing
+  - Client Side Routing
+  - Server Side Routing

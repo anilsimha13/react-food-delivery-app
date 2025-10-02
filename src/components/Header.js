@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { LOGO_URL } from "../utils/constants";
 import { useState } from "react";
 const Header = () => {
@@ -10,10 +11,19 @@ const Header = () => {
       <div className="nav-items">
         <ul>
           <li>🟢</li>
-          <li>Swiggy Corporate</li>
-          <li>Search</li>
-          <li>Offers</li>
-          <li>Help</li>
+          <li>
+            <Link to="/corporate">Swiggy Corporate</Link>
+          </li>
+          <li>
+            <Link to="/search">Search</Link>
+          </li>
+          <li>
+            <Link to="/offers">Offers</Link>
+          </li>
+          <li>
+            <Link to="/help">Help</Link>
+          </li>
+
           <button
             className="login-btn"
             onClick={() => {
