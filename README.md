@@ -245,3 +245,10 @@ import {Component} from 'path'
 - Routing
   - Client Side Routing
   - Server Side Routing
+
+## Day - 7
+
+### Things to remember
+
+- Class based Components ( Older/not recommended way)
+- Lifecycle of a Class based components
